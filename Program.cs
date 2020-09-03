@@ -70,7 +70,7 @@ namespace ShootingDice
 
             Player worst = new SoreLoserUpperHalfPlayer();
             worst.Name = "The Worst";
-            player1.Play(worst);
+            worst.Play(player1);
 
             List<Player> players = new List<Player>()
             {

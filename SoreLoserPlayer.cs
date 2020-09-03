@@ -8,9 +8,6 @@ namespace ShootingDice
     // Where might you catch this exception????
     public class SoreLoserPlayer : Player
     {
-        //try/catch
-        //literally think about what you need to happen
-
         public override void Play(Player other)
         {
 
@@ -26,10 +23,10 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
+                //are we supposed to throw an actual exception???
+                try { throw new NullReferenceException(); }
 
-                try { other.Name = "Loser"; }
-                catch { Console.WriteLine("Hey, loser, stop being a sore loser!"); }
-                Console.WriteLine($"{other.Name} Wins!");
+                catch { Console.WriteLine("Come on dude, man up! Ya lost!"); }
             }
             else
             {

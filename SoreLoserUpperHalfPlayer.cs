@@ -27,7 +27,10 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
-                Console.WriteLine($"{other.Name} Wins!");
+                //are we supposed to throw an actual exception???
+                try { throw new NullReferenceException(); }
+
+                catch { Console.WriteLine("Give it up!"); }
             }
             else
             {
