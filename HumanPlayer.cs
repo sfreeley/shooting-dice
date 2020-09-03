@@ -11,18 +11,8 @@ namespace ShootingDice
         {
             // Call roll for "this" object and for the "other" object
             Console.WriteLine("What number ya rolling? Make sure it's between 1 and 6 yo!");
-
             string numberToRoll = Console.ReadLine();
             int myRoll = int.Parse(numberToRoll);
-            // try
-            // {
-
-            // }
-            // catch
-            // {
-            //     Console.WriteLine("Hey, it's got to be a number yo!");
-            // }
-
             int otherRoll = other.Roll();
 
             Console.WriteLine($"{Name} rolls a {myRoll}");
